@@ -68,8 +68,5 @@ theme: mponizil-com
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: rsync
-  host: 50.57.170.78
-  port: 22
-  user: mponizil
-  root: /home/mponizil/www/mponizil.com
+  type: heroku
+  repo: https://git.heroku.com/mponizil-com.git
