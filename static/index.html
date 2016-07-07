@@ -10,6 +10,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro' rel='stylesheet' type='text/css'>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
 
     <style type='text/css'>
     * {
@@ -21,7 +22,6 @@
     }
     body {
       font-family: 'Helvetica Neue', Arial, sans-serif;
-      background: linear-gradient(#3d83c4, #4CC6C0);
       display: flex;
       flex-direction: column;
       color: #3a3a3a;
@@ -52,16 +52,14 @@
       flex-direction: column;
       justify-content: space-around;
       margin-top: 10vh;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+    .gradient {
+      height: 3px;
+      background: linear-gradient(to left, #3d83c4, #4CC6C0);
     }
     .block {
       width: 100%;
-      background-color: #f6f6f6;
-      border: 1px solid #e2e2e2;
       padding: 20px;
-    }
-    .body {
-      background-color: #f1f1f1;
     }
     .details {
       list-style: disc;
@@ -80,6 +78,9 @@
     .social li {
       display: inline-block;
       margin: 0 2px;
+    }
+    .social a {
+      color: #3a3a3a;
     }
 
     @media (max-width: 768px) {
@@ -107,6 +108,8 @@
 
         </div>
 
+        <div class='gradient'></div>
+
         <div class='block body'>
 
           <ul class='details'>
@@ -124,17 +127,22 @@
           <ul class='social'>
             <li>
               <a href='https://github.com/mponizil' target='_blank'>
-                <img src='./assets/github.png' width='32' height='32' />
+                <i class='zmdi zmdi-hc-lg zmdi-hc-fw zmdi-github'></i>
               </a>
             </li>
             <li>
               <a href='https://www.linkedin.com/in/mponizil' target='_blank'>
-                <img src='./assets/linkedin.png' width='32' height='32' />
+                <i class='zmdi zmdi-hc-lg zmdi-hc-fw zmdi-linkedin-box'></i>
               </a>
             </li>
             <li>
               <a href='mailto:misha.ponizil@gmail.com' target='_blank'>
-                <img src='./assets/email.png' width='32' height='32' />
+                <i class='zmdi zmdi-hc-lg zmdi-hc-fw zmdi-email'></i>
+              </a>
+            </li>
+            <li>
+              <a href='./assets/misha-ponizil-resume.pdf' target='_blank'>
+                <i class='zmdi zmdi-hc-lg zmdi-hc-fw zmdi-file-text'></i>
               </a>
             </li>
           </ul>
